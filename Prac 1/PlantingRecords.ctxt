@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=PlantingRecords
+comment1.params=dateOfPlanting\ weight\ bestBeforeDate\ name\ species\ genus\ family\ bestMonth\ monthsToBloom\ id\ size\ areaInUse
+comment1.target=PlantingRecords(java.lang.String,\ int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String,\ int,\ int)
+numComments=2

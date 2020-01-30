@@ -3,7 +3,10 @@ public class FlowerBed{
     private int size;
     private int areaInUse;
     
-    public FlowerBed(){
+    public FlowerBed(String id,int size, int areaInUse){
+        id = this.id;
+        size = this.size;
+        areaInUse = this.areaInUse;
     }
     
     //get methods

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=SeedStock
+comment1.params=weight\ bestBeforeDate\ name\ species\ genus\ family\ bestMonth\ monthsToBloom
+comment1.target=SeedStock(int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int)
+comment2.params=
+comment2.target=int\ getKg()
+comment3.params=
+comment3.target=java.lang.String\ getBestBeforeDate()
+comment4.params=kg
+comment4.target=void\ setKg(int)
+comment5.params=bestBeforeDate
+comment5.target=void\ setBestBeforeDate(java.lang.String)
+numComments=6

@@ -7,7 +7,12 @@ public class Flower{
     private String bestMonth;
     private int monthsToBloom;
     
-    public Flower(){
+    public Flower(String name,String species,String genus,String family,String bestMonth,int monthsToBloom){
+        species = this.species;
+        genus = this.genus;
+        family = this.family;
+        bestMonth = this.bestMonth;
+        monthsToBloom = this.monthsToBloom;
     }
     
     //get methods
@@ -29,7 +34,6 @@ public class Flower{
     public int getMonthsToBloom(){
         return monthsToBloom;
     }
-    
     //set methods
     public void setName(String name){
         name = this.name;
