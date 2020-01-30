@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=FlowerBed
+comment1.params=
+comment1.target=FlowerBed()
+comment2.params=
+comment2.target=java.lang.String\ getId()
+comment3.params=
+comment3.target=int\ getSize()
+comment4.params=
+comment4.target=int\ getAreaInUse()
+comment5.params=id
+comment5.target=void\ setId(java.lang.String)
+comment6.params=size
+comment6.target=void\ setSize(int)
+comment7.params=areaInUse
+comment7.target=void\ setAreaInUse(int)
+numComments=8
