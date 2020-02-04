@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=CountExpr
+comment0.text=\r\n\ A\ simple\ class\ to\ apply\ a\ transformation\ iteratively\r\n\ \r\n\ @author\ Steven\ Bradley\r\n\ \r\npublic\ class\ CountExpr\r\n{\r\n\ \ \ \ private\ double\ x;\r\n\ \ \ \ public\ double\ y;\r\n\ \ \ \ \r\n\ \ \ \ public\ CountExpr(int\ startx,\ int\ starty){\r\n\ \ \ \ \ \ \ \ \ x\=startx/10.0;\r\n\ \ \ \ \ \ \ \ y\=starty/10.0;\r\n\ \ \ \ }\r\n\ \ \ \ \r\n\ \ \ \ public\ void\ doOnce(){\r\n\ \ \ \ \ \ \ \ y\=(x-25)*Math.tan(y/3)\ -\ (y-30)*Math.tan(x/3);\r\n\ \ \ \ }\r\n\ \ \ \ \r\n\ \ \ \ public\ boolean\ finished(){\r\n\ \ \ \ \ \ \ \ \ \ \ \ return\ x+y>100;\ \r\n\ \ \ \ }\r\n}\r\n
+comment1.params=startx\ starty
+comment1.target=CountExpr(int,\ int)
+comment2.params=
+comment2.target=double\ getX()
+comment3.params=
+comment3.target=double\ getY()
+comment4.params=x
+comment4.target=void\ setX(double)
+comment5.params=y
+comment5.target=void\ setY(double)
+comment6.params=
+comment6.target=void\ doOnce()
+comment7.params=
+comment7.target=boolean\ finished()
+numComments=8
