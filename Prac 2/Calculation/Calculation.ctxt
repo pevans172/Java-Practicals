@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Calculation
 comment1.params=x\ y
-comment1.target=Calculation(int,\ int)
+comment1.target=Calculation(double,\ double)
 comment10.params=
 comment10.target=boolean\ xIsOdd()
 comment11.params=date
@@ -13,9 +13,9 @@ comment13.target=int\ getHoursInAWeek()
 comment14.params=
 comment14.target=int\ getSecondsInAYear()
 comment2.params=x
-comment2.target=void\ setX(int)
+comment2.target=void\ setX(double)
 comment3.params=y
-comment3.target=void\ setY(int)
+comment3.target=void\ setY(double)
 comment4.params=
 comment4.target=double\ getX()
 comment5.params=

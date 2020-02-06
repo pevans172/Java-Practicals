@@ -3,16 +3,16 @@ public class Calculation
     private double x;
     private double y;
 
-    public Calculation(int x, int y)
+    public Calculation(double x, double y)
     {
         this.x = x;
         this.y = y;
     }
 
-    public void setX(int x){
+    public void setX(double x){
         this.x = x;
     }
-    public void setY(int y){
+    public void setY(double y){
         this.y = y;
     }
     
@@ -43,16 +43,22 @@ public class Calculation
         x = ((-b)+Math.sqrt(Math.pow(b, 2)-(4*a*c)))/(2*a);
         y = ((-b)-Math.sqrt(Math.pow(b, 2)-(4*a*c)))/(2*a);
     }
-    public boolean xIsOdd(){
-        if((x%2) == 0){
+    public boolean xIsOdd() throws Exception{
+        if(x == Math.floor(x)){
+            if((x%2) == 0){
             return false;
         }
         else{
             return true;
         }
+        }
+        else{
+            throw new Exception("X is not a integer.");
+        }
     }
     public void getMonthAndYear(String date){
-        String[] dates = date.split("/");
+        String[] dates = new String[2];
+        dates = date.split("/");
         x = Double.parseDouble(dates[0]);
         String d = dates[1];
         if(d.length() == 2){
@@ -108,10 +114,10 @@ public class Calculation
         return coins;
     }
     
-    public int getHoursInAWeek(){
+    public static int getHoursInAWeek(){
         return (24*7);
     }
-    public int getSecondsInAYear(){
+    public static int getSecondsInAYear(){
         return (60*60*24*365);
     }
 }
