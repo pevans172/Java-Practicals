@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=BankAccount
+comment1.params=uniqueAccountId\ owner\ balance
+comment1.target=BankAccount(int,\ Person,\ int)
+comment2.params=owner
+comment2.target=void\ setOwner(Person)
+comment3.params=balance
+comment3.target=void\ setBalance(int)
+comment4.params=amountInvolved\ sender\ reciever
+comment4.target=void\ addTransaction(int,\ BankAccount,\ BankAccount)
+comment5.params=
+comment5.target=int\ getUniqueAccountId()
+comment6.params=
+comment6.target=Person\ getOwner()
+comment7.params=
+comment7.target=int\ getBalance()
+comment8.params=
+comment8.target=java.util.ArrayList\ getTransactions()
+numComments=9

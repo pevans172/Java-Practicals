@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Transaction
+comment1.params=amountInvolved\ sender\ reciever
+comment1.target=Transaction(int,\ BankAccount,\ BankAccount)
+comment2.params=
+comment2.target=int\ getAmountInvolved()
+comment3.params=
+comment3.target=BankAccount\ getSender()
+comment4.params=
+comment4.target=BankAccount\ getReciever()
+numComments=5
