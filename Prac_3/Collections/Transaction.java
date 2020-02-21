@@ -4,10 +4,9 @@ public class Transaction
     private BankAccount sender;
     private BankAccount reciever;
 
-    public Transaction(int amountInvolved, BankAccount sender, BankAccount reciever)
+    public Transaction(int amountInvolved, BankAccount reciever)
     {
         this.amountInvolved = amountInvolved;
-        this.sender = sender;
         this.reciever = reciever;
     }
 
@@ -15,10 +14,6 @@ public class Transaction
     public int getAmountInvolved()
     {
         return amountInvolved;
-    }
-    public BankAccount getSender()
-    {
-        return sender;
     }
     public BankAccount getReciever()
     {

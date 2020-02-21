@@ -1,10 +1,12 @@
 import java.util.ArrayList;
+
 public class BankAccount
 {
     private int uniqueAccountId;
     private Person owner;
     private int balance;
     private Transaction t;
+    
     private ArrayList<Transaction> transactions;
 
     public BankAccount(int uniqueAccountId, Person owner, int balance)
@@ -12,7 +14,7 @@ public class BankAccount
         this.uniqueAccountId = uniqueAccountId;
         this.owner = owner;
         this.balance = balance;
-        ArrayList<Transaction> transactions = new ArrayList<Transaction>();
+        transactions = new ArrayList<Transaction>();
     }
 
     public void setOwner(Person owner)
@@ -25,7 +27,7 @@ public class BankAccount
     }
     public void addTransaction(int amountInvolved, BankAccount reciever)
     {
-        t = new Transaction(amountInvolved, this, reciever);
+        t = new Transaction(amountInvolved, reciever);
         transactions.add(t);
     }
     
@@ -53,7 +55,7 @@ public class BankAccount
             System.out.println("Transaction " + i);
             System.out.println("Amount: " + transactions.get(i).getAmountInvolved());
             System.out.println("Sent to: " + transactions.get(i).getReciever());
-            System.out.println("Sent by: " + transactions.get(i).getSender());
+            System.out.println("Sent by: " + getUniqueAccountId());
         }
     }
 }
