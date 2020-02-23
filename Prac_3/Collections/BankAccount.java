@@ -16,7 +16,6 @@ public class BankAccount
         
         owner = new Person(age, firstName, lastName, birthDate);
     }
-    
     public BankAccount()
     {
         this.uniqueAccountId = 12345;
@@ -24,6 +23,14 @@ public class BankAccount
         transactions = new ArrayList<Transaction>();
         
         owner = new Person(20, "Phil", "Evans", "25/09/98");
+    }
+    public BankAccount(int uniqueAccountId, int age, String firstName)
+    {
+        this.uniqueAccountId = uniqueAccountId;
+        this.balance = 1000;
+        transactions = new ArrayList<Transaction>();
+        
+        owner = new Person(age, firstName, "Evans", "25/09/98");
     }
 
     public void setOwner(Person owner)

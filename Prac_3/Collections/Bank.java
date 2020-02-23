@@ -29,25 +29,25 @@ public class Bank
         return temp.getOwner().getFirstName();
     }
     
-    public int getMeanAge()
+    public double getMeanAge()
     {
         int average = 0;
-        for (int i = 1; i < customers.size(); i++)
+        double average = 0;
+        for (int i = 0; i < customers.size(); i++)
         {
             average += customers.get(i).getOwner().getAge();
         }
-        average = average / customers.size();
-        return average;
+        return average/customers.size();
     }
     
-    public ArrayList<BankAccount> getAllUnder18()
+    public ArrayList<Integer> getAllUnder18()
     {
-        ArrayList<BankAccount> temp = new ArrayList<BankAccount>();
+        ArrayList<Integer> temp = new ArrayList<Integer>();
         for (int i = 0; i < customers.size(); i++)
         {
             if (customers.get(i).getOwner().getAge() <= 18) 
             {
-                temp.add(customers.get(i));
+                temp.add(customers.get(i).getUniqueAccountId());
             }
         }
         return temp;
@@ -55,31 +55,26 @@ public class Bank
     
     public int getMedianAge()
     {
-        ArrayList<BankAccount> list = customers;
-        for(int j = 0; j < customers.size(); j++)
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i = 0; i < customers.size(); i++)
         {
-            BankAccount temp = list.get(j);
-            for (int i = 0; i < customers.size(); i++)
-            {
-                if (temp.getOwner().getAge() > customers.get(i).getOwner().getAge()) 
-                {
-                    Collections.swap(list, list.indexOf(temp), i);
-                }
-            }
+            list.add(customers.get(i).getOwner().getAge());
         }
+        
+        Collections.sort(list); 
         
         int middle = list.size();
         int median = 0;
         if (middle % 2 == 0)
         {
             middle = middle / 2;
-            median = ( list.get(middle).getOwner().getAge() + list.get(middle + 1).getOwner().getAge() )/2;
+            median = ( list.get(middle) + list.get(middle - 1) )/2;
         }
         else
         {
             double middleDouble = list.size();
             middle = (int) ((middleDouble / 2) + 0.5);
-            median = list.get(middle).getOwner().getAge();
+            median = list.get(middle - 1);
         }
         return median;
     }
