@@ -1,7 +1,6 @@
 public class Transaction
 {
     private int amountInvolved;
-    private BankAccount sender;
     private BankAccount reciever;
 
     public Transaction(int amountInvolved, BankAccount reciever)
