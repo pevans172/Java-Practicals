@@ -31,7 +31,6 @@ public class Bank
     
     public double getMeanAge()
     {
-        int average = 0;
         double average = 0;
         for (int i = 0; i < customers.size(); i++)
         {
