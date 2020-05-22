@@ -6,7 +6,7 @@ public class Clock
     
     public Clock()
     {
-        hours = new Numbers(24, 7);
+        hours = new Numbers(24, 0);
         minutes = new Numbers(60, 0);
     }
     
