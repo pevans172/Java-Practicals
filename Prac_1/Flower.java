@@ -8,11 +8,11 @@ public class Flower{
     private int monthsToBloom;
     
     public Flower(String name,String species,String genus,String family,String bestMonth,int monthsToBloom){
-        species = this.species;
-        genus = this.genus;
-        family = this.family;
-        bestMonth = this.bestMonth;
-        monthsToBloom = this.monthsToBloom;
+        this.species = species;
+        this.genus = genus;
+        this.family = family;
+        this.bestMonth = bestMonth;
+        this.monthsToBloom = monthsToBloom;
     }
     
     //get methods
@@ -36,21 +36,21 @@ public class Flower{
     }
     //set methods
     public void setName(String name){
-        name = this.name;
+        this.name = name;
     }
     public void setSpecies(String species){
-        species = this.species;
+        this.species = species;
     }
     public void setGenus(String genus){
-         genus = this.genus;
+         this.genus = genus;
     }
     public void setFamily(String family){
-        family = this.family;
+        this.family = family;
     }
     public void setBestMonth(String bestMonth){
-        bestMonth = this.bestMonth;
+        this.bestMonth = bestMonth;
     }
     public void setMonthsToBloom(int monthsToBloom){
-        monthsToBloom = this.monthsToBloom;
+        this.monthsToBloom = monthsToBloom;
     }
 }

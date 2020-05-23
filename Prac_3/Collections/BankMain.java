@@ -36,5 +36,7 @@ public class BankMain
         System.out.println();
         
         System.out.println("######################");
+        
+        bank.printAllCustomers();
     }
 }

@@ -13,8 +13,10 @@ public class Person
         this.birthDate = birthDate;
     }
 
-    public void setAge(int x){
-        this.age = age;
+    public void setAge(int age){
+        if(age >= 0){
+            this.age = age;
+        }
     }
     public void setFirstName(String firstName){
         this.firstName = firstName;

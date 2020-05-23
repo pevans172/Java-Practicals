@@ -11,7 +11,7 @@ public class PlantingRecords
     {
         seedUsed = new SeedStock(weight,bestBeforeDate,name,species,genus,family,bestMonth,monthsToBloom);
         bedUsed = new FlowerBed(id,size,areaInUse);
-        dateOfPlanting = this.dateOfPlanting;
+        this.dateOfPlanting = dateOfPlanting;
     }
 
     // getters

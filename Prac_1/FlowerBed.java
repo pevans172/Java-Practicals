@@ -4,9 +4,9 @@ public class FlowerBed{
     private int areaInUse;
     
     public FlowerBed(String id,int size, int areaInUse){
-        id = this.id;
-        size = this.size;
-        areaInUse = this.areaInUse;
+        this.id = id;
+        this.size = size;
+        this.areaInUse = areaInUse;
     }
     
     //get methods
@@ -22,12 +22,12 @@ public class FlowerBed{
     
     //set methods
     public void setId(String id){
-        id = this.id;
+        this.id = id;
     }
     public void setSize(int size){
-         size = this.size;
+         this.size = size;
     }
     public void setAreaInUse(int areaInUse){
-        areaInUse = this.areaInUse;
+        this.areaInUse = areaInUse;
     }
 }

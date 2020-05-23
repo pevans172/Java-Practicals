@@ -8,7 +8,7 @@ public class SeedStock
                     String genus,String family,String bestMonth,int monthsToBloom){
         seed = new Flower(name, species, genus, family, bestMonth, monthsToBloom);
         kg = weight;
-        bestBeforeDate = this.bestBeforeDate;
+        this.bestBeforeDate = bestBeforeDate;
     }
     
     // getters
@@ -20,10 +20,10 @@ public class SeedStock
     }
     // setters
     public void setKg(int kg){
-        kg = this.kg;
+        this.kg = kg;
     }
     public void setBestBeforeDate(String bestBeforeDate){
-        bestBeforeDate = this.bestBeforeDate;
+        this.bestBeforeDate = bestBeforeDate;
     }
 }
 

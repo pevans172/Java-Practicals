@@ -16,6 +16,14 @@ public class Bank
         customers.add(account);
     }
     
+    public void printAllCustomers(){
+        System.out.println();
+        for(BankAccount i: customers){
+            System.out.println(i.getUniqueAccountId());
+        }
+        System.out.println();
+    }
+    
     public String getOldest()
     {
         BankAccount temp = customers.get(0);
@@ -32,9 +40,9 @@ public class Bank
     public double getMeanAge()
     {
         double average = 0;
-        for (int i = 0; i < customers.size(); i++)
+        for(BankAccount i: customers)
         {
-            average += customers.get(i).getOwner().getAge();
+            average += i.getOwner().getAge();
         }
         return average/customers.size();
     }
@@ -42,11 +50,11 @@ public class Bank
     public ArrayList<Integer> getAllUnder18()
     {
         ArrayList<Integer> temp = new ArrayList<Integer>();
-        for (int i = 0; i < customers.size(); i++)
+        for(BankAccount i: customers)
         {
-            if (customers.get(i).getOwner().getAge() <= 18) 
+            if (i.getOwner().getAge() <= 18) 
             {
-                temp.add(customers.get(i).getUniqueAccountId());
+                temp.add(i.getUniqueAccountId());
             }
         }
         return temp;
@@ -55,9 +63,9 @@ public class Bank
     public int getMedianAge()
     {
         ArrayList<Integer> list = new ArrayList<Integer>();
-        for (int i = 0; i < customers.size(); i++)
+        for(BankAccount i: customers)
         {
-            list.add(customers.get(i).getOwner().getAge());
+            list.add(i.getOwner().getAge());
         }
         
         Collections.sort(list); 

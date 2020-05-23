@@ -2,7 +2,7 @@
 comment0.target=Person
 comment1.params=age\ firstName\ lastName\ birthDate
 comment1.target=Person(int,\ java.lang.String,\ java.lang.String,\ java.lang.String)
-comment2.params=x
+comment2.params=age
 comment2.target=void\ setAge(int)
 comment3.params=firstName
 comment3.target=void\ setFirstName(java.lang.String)
