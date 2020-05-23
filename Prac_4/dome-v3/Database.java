@@ -48,6 +48,7 @@ public class Database
      */
     public void createDatabase()
     {
+        // local variables
         CD item;
 
         item = new CD("Lungs", "Florence", 10, 100);
@@ -58,9 +59,16 @@ public class Database
         item.setComment("Why ???");
         this.addItem(item);
         
-        DVD iten; 
-        item = new CD("Lungs", "Florence", 10, 100);
-        item.setComment("Breathes easily");
-        this.addItem(item);
+        // local variables
+        DVD i; 
+        i = new DVD("Titanic", "James Cameron", 120);
+        i.setComment("Romance");
+        this.addItem(i);
+        
+        // local variables
+        VideoGame x; 
+        x = new VideoGame("Gears 5", "XBOX One");
+        x.setComment("Action");
+        this.addItem(x);
     }
 }

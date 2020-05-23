@@ -7,4 +7,6 @@ comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ DVD\r\n\ @param\ theTi
 comment2.params=
 comment2.target=java.lang.String\ getDirector()
 comment2.text=\r\n\ @return\ The\ director\ for\ this\ DVD.\r\n
-numComments=3
+comment3.params=
+comment3.target=void\ print()
+numComments=4

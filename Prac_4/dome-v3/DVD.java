@@ -7,6 +7,7 @@
 public class DVD extends Item 
 {
     private String director;
+    private int playingTime;
 
     /**
      * Constructor for objects of class DVD
@@ -16,7 +17,8 @@ public class DVD extends Item
      */
     public DVD(String theTitle, String theDirector, int time)
     {
-        super(theTitle, time);
+        super(theTitle);
+        playingTime = time;
         director = theDirector;
     }
 
@@ -26,5 +28,12 @@ public class DVD extends Item
     public String getDirector()
     {
         return director;
+    }
+    
+    public void print()
+    {
+        super.print();
+        System.out.println("Director: " + director );
+        System.out.println("Playing time: " + playingTime );
     }
 }

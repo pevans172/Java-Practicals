@@ -7,6 +7,7 @@ public class CD extends Item
 {
     private String artist;
     private int numberOfTracks;
+    private int playingTime;
 
     /**
      * Initialize the CD.
@@ -17,9 +18,10 @@ public class CD extends Item
      */
     public CD(String theTitle, String theArtist, int tracks, int time)
     {
-        super(theTitle, time);
+        super(theTitle);
         artist = theArtist;
         numberOfTracks = tracks;
+        playingTime = time;
     }
 
     /**
@@ -46,6 +48,7 @@ public class CD extends Item
         super.print();
         System.out.println("artist: " + artist );
         System.out.println("tracks: " + numberOfTracks );
+        System.out.println("Playing time: " + playingTime );
     }
    
 }

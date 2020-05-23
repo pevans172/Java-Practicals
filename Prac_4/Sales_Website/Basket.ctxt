@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Basket
+comment1.params=
+comment1.target=Basket()
+comment2.params=referenceId\ name\ description\ vat\ pricePerMeasure
+comment2.target=void\ addToBasketFrac(int,\ java.lang.String,\ java.lang.String,\ double,\ double)
+comment3.params=referenceId\ name\ description\ vat\ pricePerUnit
+comment3.target=void\ addToBasketWhole(int,\ java.lang.String,\ java.lang.String,\ double,\ double)
+comment4.params=referenceId\ name\ description\ vat\ pricePerUnit\ grade
+comment4.target=void\ addToBasketSecondHand(int,\ java.lang.String,\ java.lang.String,\ double,\ double,\ int)
+comment5.params=
+comment5.target=void\ print()
+comment6.params=
+comment6.target=void\ createBasket()
+comment7.params=
+comment7.target=double\ getPriceOfBasketB4Tax()
+comment8.params=
+comment8.target=double\ getPriceOfBasketAfterTax()
+numComments=9
